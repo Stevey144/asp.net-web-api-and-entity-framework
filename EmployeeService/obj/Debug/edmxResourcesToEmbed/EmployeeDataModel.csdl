@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="STEPHENModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="EMPLOYEE">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FIRSTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LASTNAME" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="GENDER" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="SALARY" Type="Int32" />
+  </EntityType>
+  <EntityContainer Name="STEPHENEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="EMPLOYEES" EntityType="Self.EMPLOYEE" />
+  </EntityContainer>
+</Schema>
