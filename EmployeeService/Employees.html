@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="Scripts/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var ulemployees = $('#ulEmployees');
+            $('#btn').click(function () {
+                $.ajax({
+                    type: 'GET',
+                    url: 'api/Employees',
+                    dataType: 'json',
+                    success: function (data) {
+                        ulemployees.empty();
+                        $.each(data, function (index, val) {
+                            var fullname = val.FIRSTNAME + ' ' + val.LASTNAME;
+                            ulemployees.append('<li>'+ fullname + '</li>')
+                        });
+                    }
+                });
+
+            });
+            $('#btnClear').click(function () {
+                ulemployees.empty();
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <input type="button" name="name" id="btn" value="Get All Employees" />
+    <input type="button" name="name" id="btnClear" value="Clear" />
+    <ul id="ulEmployees">
+    </ul>
+
+
+</body>
+</html>

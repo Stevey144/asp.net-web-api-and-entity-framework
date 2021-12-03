@@ -61,6 +61,5 @@ C:\Users\stephen\source\repos\EmployeeService\EmployeeService\bin\Antlr3.Runtime
 C:\Users\stephen\source\repos\EmployeeService\EmployeeService\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\stephen\source\repos\EmployeeService\EmployeeService\obj\Debug\EmployeeService.csproj.AssemblyReference.cache
 C:\Users\stephen\source\repos\EmployeeService\EmployeeService\obj\Debug\EmployeeService.csproj.CoreCompileInputs.cache
-C:\Users\stephen\source\repos\EmployeeService\EmployeeService\obj\Debug\EmployeeService.csproj.CopyComplete
 C:\Users\stephen\source\repos\EmployeeService\EmployeeService\obj\Debug\EmployeeService.dll
 C:\Users\stephen\source\repos\EmployeeService\EmployeeService\obj\Debug\EmployeeService.pdb
